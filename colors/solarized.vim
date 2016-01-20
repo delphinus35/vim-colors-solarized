@@ -1174,9 +1174,6 @@ hi! link rubyDefine rubyControl
 " This is a better cursor
 hi! link Cursor VisualNOS
 
-" Search is way too distracting in original Solarized
-hi! link Search DiffAdd
-
 " Colors to make LustyJuggler more usable
 " the Question color in LustyJuggler is mapped to
 " the currently selected buffer.
