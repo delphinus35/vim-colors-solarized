@@ -455,7 +455,11 @@ endif
 " ---------------------------------------------------------------------
 
 exe "let s:bg_none      = ' ".s:vmode."bg=".s:none   ."'"
-exe "let s:bg_back      = ' ".s:vmode."bg=".s:none   ."'"
+if has("gui_running")
+    exe "let s:bg_back      = ' ".s:vmode."bg=".s:back   ."'"
+else
+    exe "let s:bg_back      = ' ".s:vmode."bg=".s:none   ."'"
+endif
 exe "let s:bg_base03    = ' ".s:vmode."bg=".s:base03 ."'"
 exe "let s:bg_base02    = ' ".s:vmode."bg=".s:base02 ."'"
 exe "let s:bg_base01    = ' ".s:vmode."bg=".s:base01 ."'"
